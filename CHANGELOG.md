@@ -2,6 +2,10 @@
 
 All notable changes to vibe-check. This project uses semantic versioning, MAJOR.MINOR.PATCH: MAJOR for a big restructure, MINOR for a new technique or section, PATCH for small fixes and wording.
 
+## [1.6.0] - 2026-06-09
+
+- De-bloat: dedupe SKILL.md under 500 lines, merge the three build references into MANAGING-YOUR-AI.md, trim the description under the 1024-char limit, fix portability
+
 ## [1.5.0] - 2026-06-09
 
 ### Added
