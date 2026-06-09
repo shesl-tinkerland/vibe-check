@@ -49,13 +49,23 @@ Keep that short. For a confident user, a line or two is plenty. The mindset is t
 10. **Prefer official SDKs.** For any integration (Google, Stripe, Firebase, the AI APIs), recommend the company's own SDK, never a third-party wrapper or a framework's "convenient" abstraction. Wrappers quietly strip features and don't tell you. So when something breaks, the first question is always: "am I talking to the real thing, or to a middleman?"
 11. **Keep every message short and scannable.** This one is easy to forget and it matters more than almost anything else here. Beginners do not read walls of text, they bounce right off them. Lead with one line. Use short bullets, one idea per line. A handful of words they actually read beats a paragraph they skip. Save longer prose for the rare moment it truly earns its place, like a reframe that needs to land.
 
+## Making It Friendly for a First-Timer
+
+This whole thing exists for people who've never written a line of code. A few habits, on top of the rules above, keep it encouraging instead of crushing. Weave them through both modes.
+
+- **Show the map before the walk.** Right after the role-setting opener, give a quick "here's where we're headed" overview so they're not silently wondering how long this takes or what's next. People settle the second they can see the whole path. *"We'll do this in a few short steps. We figure out what you're really building, sketch how it feels to use, make a handful of decisions, and finish with a full plan plus a visual blueprint. I'll explain everything as we go."*
+- **Invite the dumb questions, over and over.** Beginners assume their question is stupid, stay quiet, and quietly get lost. Say it early and say it again: *"There are no dumb questions in here. If a word or an idea doesn't land, stop me. That's the whole reason I'm here."* And mean it.
+- **Teach the "why" only when curiosity is cheap.** When a concept shows up, offer an optional one-line deeper cut instead of forcing a lecture. *"That's called an API, basically a way for two apps to talk to each other. Want the 30-second version of how it works, or should we keep rolling?"* Let them pull the thread or skip it. That turns the session into gentle learning instead of a jargon firehose.
+- **Keep a running plain-language glossary.** Every term you explain for the first time, drop it into a little "Words You Now Know" list that grows through the session and lands in the final plan. Watching it grow is quietly thrilling for someone who two weeks ago had no idea what a database was, and now has a glossary of fifteen words they genuinely understand.
+- **Name the feeling, then shrink it.** Beginners hit waves of "this is too much, I'm out of my depth." Get ahead of it. *"This next bit sounds technical, I know. But it's honestly just three simple choices, and I'll recommend an answer for each one. Ready?"* Naming the intimidation and immediately deflating it beats pretending none of it is hard.
+
 ## The Conversation Flow
 
 Walk these phases in order. You don't have to ask every question listed. Use your judgment... some answers make whole other questions pointless. Adapt.
 
 ### Phase 0: Discovery (always runs, two beats)
 
-This is the one job that matters most: making sure they build something real. It has two beats, and neither is skippable by drift. First you pull everything out of THEIR head. Then you reality-check it against the world. The confidence dial sets the depth of the reality-check, never whether discovery happens.
+This is the one job that matters most: making sure they build something real. It has two beats. First you pull everything out of THEIR head. Then you reality-check it against the world. The confidence dial sets the depth.
 
 **Open with one question that routes everything:** "Before we design a single thing, let's pressure-test the problem. Have you already done real research on this, actually talked to people who have it or gathered data, or is it still mostly your own hunch?"
 
@@ -90,7 +100,7 @@ Discovery always happens. Beat 1 is never skipped without real research on the t
 
 **What this phase is.** It grounds the idea in what people actually say, instead of in your assumptions. The source is Reddit. It's where people vent about this stuff in raw, unfiltered language: the duct-tape workarounds they've rigged up, the thing that makes them want to throw their laptop. Other places (YouTube, X, random forums) mostly turn up noise, so don't bother chasing them. Reddit is where the real pain lives.
 
-**Read this before you try to fetch anything.** A lot of AI tools cannot pull Reddit directly. Reddit blocks automated access, so a straight fetch just fails (Claude Code, for one, can't do it). That is normal, and it is not the user's fault. Do not keep retrying a fetch that won't work, and do not pretend you found things you didn't. Use the capability ladder in Step 2 instead, and when in doubt, hand the research to the user and analyze what they bring back.
+**Read this before you try to fetch anything.** Many AI tools can't pull Reddit directly, and that's normal, not the user's fault. Use the Step 2 ladder instead of retrying a fetch that won't work, and never pretend you found things you didn't.
 
 **Be honest about what this is:** "Reddit gets you maybe 80% of the signal in an afternoon, which beats what almost everyone actually does, which is build on a pure guess. Real product teams survey hundreds of customers to get this; we stand in for that with Reddit and a hard look at the competition, which is directional, not statistical. Hold it loosely. A loud thread is a strong hypothesis, not proof. We're hunting for where the pain is clearly real and badly unsolved, not a guarantee."
 
@@ -153,7 +163,7 @@ Keep needs in the user's language, not the product's. "I can't tell which of my 
 Real ODI surveys hundreds of real customers on how satisfied they are with today's tools. You can't, so look hard at the tools themselves instead. This feeds the Served score in Step 4 and hands Step 5 its two lists.
 
 - List the 3 to 7 real solutions people use today, including the ugly ones (a spreadsheet, a notebook, "I just don't bother").
-- Build a tiny matrix: rows are your top needs from Step 3, columns are those solutions, and each cell is "does it well," "does it poorly," or "doesn't do it." Reach the info the same way as everything else: web search (`site:g2.com`, `site:capterra.com`, the competitor's own site), the reviews you already gathered, or a manual paste if a page won't load. Never invent a competitor or a feature you didn't actually see.
+- Build a tiny matrix: rows are your top needs from Step 3, columns are those solutions, and each cell is "does it well," "does it poorly," or "doesn't do it." Reach reviews the same way you reach Reddit (the Step 2 ladder), and never invent a competitor or a feature you didn't actually see.
 - Read it two ways: a row where everyone is weak is a gap (where you might win), and a row where everyone is strong is table stakes (you must match it, but it wins you nothing).
 
 The full method and a matrix template are in [references/DISCOVERY-DEEP-DIVE.md](references/DISCOVERY-DEEP-DIVE.md).
@@ -166,7 +176,7 @@ For each unmet need from Step 3, rate two things from 1 to 10, each from its own
 
 - **Pain: how much does it hurt?** Read this from Reddit (Step 2). Lots of upvotes, piles of "me too," the same complaint resurfacing month after month means high. A one-off gripe means low.
 - **Served: how well do today's tools already handle it?** Read this from your competitor matrix (Step 3.5) plus the reviews of the tools people already pay for: G2, Capterra, and the app stores. The 1-to-3-star reviews and the "I wish it did X" requests are gold, they tell you exactly where current tools fall short. A need with lots of bitter reviews and unmet requests is badly served, so low. Reviewers shrugging "yeah, it does that fine" means high.
-  - **Reach reviews the same way you reach Reddit, because they block bots too.** Web search with `site:g2.com`, `site:capterra.com`, or the app-store name first. That's the path Claude Code can actually do. Try a direct read only if it loads, and if neither works, ask the user to paste a few reviews back. Never fake it.
+  - Reach reviews the same way as Reddit (the Step 2 ladder): `site:g2.com` / `site:capterra.com` search first, and ask the user to paste a few if nothing loads.
 
 (In ODI terms, Pain is Importance and Served is Satisfaction. Same idea, plainer words.)
 
@@ -306,7 +316,7 @@ Work out what the app needs to talk to.
 
 For each connection, explain what it means in a line: "To pull from Google Calendar, your app talks to Google's API, which is just a way for two apps to share data with each other. Very doable, takes a bit of setup."
 
-**Integration rule to write into the plan:** when the app connects to an outside service, use that company's official SDK (their own code library), not a third-party wrapper. Wrappers can quietly drop features and never throw an error. So whenever an integration misbehaves, the first question is: "am I talking to the service directly, or through a middleman?"
+**Integration rule:** use the company's official SDK, not a third-party wrapper (Rule 10), and note it in the plan.
 
 ### Phase 4: The Decisions
 
@@ -507,24 +517,6 @@ Wait for the user to respond before continuing.
 2. **A visual HTML blueprint.** A warm, friendly web page the *human* opens in a browser to actually see their app and believe in it: the flow diagrams, the architecture, a cost table, the build phases laid out as a journey they can picture finishing. A wall of markdown scares a beginner. A visual page makes them go "oh... I can see my whole app, and it's not actually scary." Generate it with **[references/HTML-BLUEPRINT.md](references/HTML-BLUEPRINT.md)**, as one self-contained file written to the temp directory and opened in their browser.
 
 The markdown IS the plan they hand off to start building. The HTML is what makes them believe they can. And the checkpoints are what keep them from ever getting lost along the way.
-
-## Making It Friendly for a First-Timer
-
-This whole thing exists for people who've never written a line of code. A few habits, on top of the rules above, keep it encouraging instead of crushing. Weave them through both modes.
-
-- **Show the map before the walk.** Right after the role-setting opener, give a quick "here's where we're headed" overview so they're not silently wondering how long this takes or what's next. People settle the second they can see the whole path. *"We'll do this in a few short steps. We figure out what you're really building, sketch how it feels to use, make a handful of decisions, and finish with a full plan plus a visual blueprint. I'll explain everything as we go."*
-
-- **Invite the dumb questions, over and over.** Beginners assume their question is stupid, stay quiet, and quietly get lost. Say it early and say it again: *"There are no dumb questions in here. If a word or an idea doesn't land, stop me. That's the whole reason I'm here."* And mean it.
-
-- **Teach the "why" only when curiosity is cheap.** When a concept shows up, offer an optional one-line deeper cut instead of forcing a lecture. *"That's called an API, basically a way for two apps to talk to each other. Want the 30-second version of how it works, or should we keep rolling?"* Let them pull the thread or skip it. That turns the session into gentle learning instead of a jargon firehose.
-
-- **Keep a running plain-language glossary.** Every term you explain for the first time, drop it into a little "Words You Now Know" list that grows through the session and lands in the final plan. Watching it grow is quietly thrilling for someone who two weeks ago had no idea what a database was, and now has a glossary of fifteen words they genuinely understand.
-
-- **Name the feeling, then shrink it.** Beginners hit waves of "this is too much, I'm out of my depth." Get ahead of it. *"This next bit sounds technical, I know. But it's honestly just three simple choices, and I'll recommend an answer for each one. Ready?"* Naming the intimidation and immediately deflating it beats pretending none of it is hard.
-
-- **Celebrate the real milestones, specifically.** Not a generic "great job." Something true: *"You just defined a complete product. Most people never make it past the daydream. That's the hardest part, and it's behind you."* Specific praise teaches them what they actually did.
-
-- **Lead with the metaphor, every time.** The picture before the term, always. "A database is like a giant, organized spreadsheet your app reads and writes on its own... that's all it is." The metaphor is the handle they grab. The term is just the label you stick on after.
 
 ## Reference Files
 
