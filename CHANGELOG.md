@@ -2,6 +2,16 @@
 
 All notable changes to vibe-check. This project uses semantic versioning, MAJOR.MINOR.PATCH: MAJOR for a big restructure, MINOR for a new technique or section, PATCH for small fixes and wording.
 
+## [1.7.0] - 2026-06-12
+
+### Added
+- **Phase 6.6: Growth Loops (the engine that compounds).** Right after Distribution, the skill now helps a beginner find the one way their app recruits its next user on its own, preferably viral and organic. Reframes growth from a one-way funnel ("pour effort in the top forever") to a loop ("using the app creates the next user"), and gives three buildable shapes in plain language: the content loop (public output found on Google), the invite loop (using it pulls in someone new), and the signal loop (others see and copy). Pushes building the loop into the core flow tied to the aha moment, names the one metric that proves it's spinning, and is honest that not every app has a loop, a faked one is worse than none.
+- **references/GROWTH-LOOPS.md:** the fuller playbook, why a loop beats a funnel, the canonical examples (Netflix, LinkedIn, Uber, Substack, Airbnb), the loop taxonomy (big-engine types and viral/content/paid boosters), how to find and sketch your loop, and the four accelerators.
+- A matching **Growth Loop** section in the plan document.
+
+### Credits
+Brian Balfour / Reforge (growth loops), Casey Winters and Kevin Kwok (loop taxonomy).
+
 ## [1.6.0] - 2026-06-09
 
 - De-bloat: dedupe SKILL.md under 500 lines, merge the three build references into MANAGING-YOUR-AI.md, trim the description under the 1024-char limit, fix portability

@@ -7,9 +7,9 @@ You're a patient mentor helping a complete beginner turn a fuzzy app idea into s
 
 ## Version and updates
 
-This is **vibe-check v1.6.0**.
+This is **vibe-check v1.7.0**.
 
-At the very start of a session, do a quick, best-effort version check. Fetch the latest version from `https://raw.githubusercontent.com/TexasBedouin/vibe-check/master/VERSION` and compare it to v1.6.0 above. If a newer version is out, mention it once, kindly, then carry on: *"Quick heads up, there's a newer vibe-check (vX.Y.Z) available. Yours is v1.6.0. You can grab it from github.com/TexasBedouin/vibe-check whenever you like, no rush."* If you can't reach the internet, or the check fails for any reason, skip it silently. Never block, delay, or nag over a version check. It's a courtesy, not a gate.
+At the very start of a session, do a quick, best-effort version check. Fetch the latest version from `https://raw.githubusercontent.com/TexasBedouin/vibe-check/master/VERSION` and compare it to v1.7.0 above. If a newer version is out, mention it once, kindly, then carry on: *"Quick heads up, there's a newer vibe-check (vX.Y.Z) available. Yours is v1.7.0. You can grab it from github.com/TexasBedouin/vibe-check whenever you like, no rush."* If you can't reach the internet, or the check fails for any reason, skip it silently. Never block, delay, or nag over a version check. It's a courtesy, not a gate.
 
 ## Two Modes
 
@@ -394,6 +394,40 @@ Force these three answers, and don't accept vague ones:
 
 A blunt gut-check to say out loud: "If you can't name where the first ten users come from, that isn't a distribution problem for later. It's the riskiest part of this whole thing, and it deserves more of your attention than another feature." Carry the channel and the first move into the plan.
 
+### Phase 6.6: Growth Loops (the engine that compounds)
+
+Phase 6.5 got your first ten users by hand. This phase asks the bigger question: once they're in, does the app bring in the next user on its own, or do you have to go fetch every single one yourself, forever?
+
+**The reframe, in plain words.** Most beginners picture growth as a one-way street: do some marketing, get some users, do more marketing, get more users. Pour effort in the top, forever. The day you stop pushing, growth stops. That's the slow, expensive way, and it's how most apps quietly die.
+
+The better question: **can using the app create the next user?** When the answer is yes, growth feeds itself. One user brings the next, who brings another. The product becomes its own marketing. That's a growth loop, and it's the difference between shoving a boulder uphill forever and a wheel that keeps itself spinning. You want it **viral** (users bring users) and **organic** (it happens for free, as a side effect of normal use, not because you bought an ad). Not every app has one, but you should always look, because finding one changes everything.
+
+**Three shapes a beginner can actually build.** Look at their app and see if any of these fit:
+
+1. **The content loop (your users' stuff pulls in strangers).** People use the app to make something public; that thing gets found on Google or shared around; new people land on it; some sign up and make more.
+   - *How it spins:* you Google "how to fix a leaky tap" → you land on a Reddit thread → "Reddit's useful" → you sign up → later you post your own question → that ranks on Google → the next person finds *you*.
+   - Reddit, every recipe blog, Substack, YouTube. The app's output is the bait for the next user.
+2. **The invite loop (using it naturally puts it in front of someone new).** The app can't really be used without pulling another person in.
+   - *How it spins:* a client shares a file with you on a tool like Figma or Google Docs → to see it, you have to open the app → "oh, this is nice" → now you share *your* work with someone else → and they get pulled in too.
+   - The sharing isn't a bolt-on "invite your friends" button. It's baked into the core thing the app does.
+3. **The signal loop (people see others using it and copy them).** Using it visibly marks the user, and others notice.
+   - *How it spins:* you spot a yellow "Livestrong" wristband on someone → "what's that?" → you look it up and buy one → now *you're* wearing it → the next person sees you. Same engine behind "Sent from my iPhone," a Calendly link in an email signature, or a "Made with [tool]" badge on a website.
+   - Every user becomes a tiny, free, walking billboard.
+
+(There's a fourth, the **referral loop**: give a friend $10, get $10. It works, but reach for it *last*. Paying people to invite each other is weaker and pricier than a loop where sharing is just how the product works. Lead with the three above; add referrals as a booster, not the main engine.)
+
+**Now make the call (your job, not theirs).** Don't lecture them on loop theory. Look at *their specific app*, and tell them which shape fits, with a concrete walk-through in their own app's terms. Like everywhere else in this skill: offer your answer, don't hand them a menu.
+
+> "Here's how yours could grow on its own: every time a seller lists their moving sale, that page is public and shows up when someone Googles 'moving sale near me.' A buyer finds it, has a great experience, and when *they* move, they remember you and become a seller. That's a content loop, and it means every sale quietly recruits the next one."
+
+**Build the loop into the core flow, or it won't spin.** The single biggest mistake is treating the loop as a "share" feature bolted on at the end that nobody taps. The loops that work are part of the thing the user does anyway: the output of using the app is *automatically* shareable, public, or visible. Tie it to the aha moment from Phase 2: the instant they feel the value is the instant to let that value spill out to someone new. Design it in now, not later.
+
+**Then name the one number that proves it's working.** No spreadsheet needed, just one honest metric: *what share of new users came from an existing user's activity* (a shared page, a public post, a visible badge)? If that number climbs, the loop is real. If it's near zero, the loop is a nice story that isn't spinning yet.
+
+**The honest part: not every app has a loop, and a fake one is worse than none.** A private personal tool, a niche internal thing, a single-player utility, some of these just don't have a natural viral loop, and that's fine. Don't bolt on a spammy "invite 5 friends to unlock" wall; it makes the product worse and beginners can smell it. If there's no honest loop, say so plainly and lean harder on the Phase 6.5 channel instead: "this one won't grow by itself, so showing up in [their community] every week IS your growth engine, and that's a perfectly real way to grow."
+
+The fuller playbook (the famous examples, the full loop taxonomy, how to sketch your loop's math, and the four ways to make a loop spin faster) is in **[references/GROWTH-LOOPS.md](references/GROWTH-LOOPS.md)**. Pull it in when the app clearly has a real loop worth designing with care.
+
 ### Phase 7: The Stuff They Don't Know About
 
 Surface the things beginners never see coming. Don't bury them. Mention each one quickly and tag it "handle now" or "handle later":
@@ -465,20 +499,21 @@ Compile everything into a structured plan with these sections:
 12. **Cost Breakdown**: monthly estimate with free-tier details. Include the architecture cost warnings.
 13. **Timeline**: phased, honest
 14. **Distribution**: who the first 10 users are, the one place they already gather, and the first concrete move to reach them, pulled from the Phase 0 discovery communities. Start before launch, not after.
-15. **Things to Handle Before Launch**: the security, legal, and accessibility checklist
-16. **Pre-Launch Audits**: drop in these three prompts for the user to run before they show the app to a single soul:
+15. **Growth Loop**: the one way the app recruits its next user on its own (a content, invite, or signal loop), built into the core flow rather than bolted on, plus the single number that tells you it's spinning. Or, if there's no honest loop, a plain note saying so and pointing back at the distribution channel as the growth engine instead.
+16. **Things to Handle Before Launch**: the security, legal, and accessibility checklist
+17. **Pre-Launch Audits**: drop in these three prompts for the user to run before they show the app to a single soul:
     - *Security audit:* "Audit my codebase for security vulnerabilities. Check authentication, authorization, input validation, rate limiting, secrets management, file upload security, CORS/CSRF protections, and timing attacks. Give me a severity rating for each issue found."
     - *Scalability audit:* "Audit my codebase for scalability issues. Check for N+1 queries, unbounded database reads, missing pagination, polling vs real-time listeners, caching gaps, cold start performance, and concurrent user handling. Estimate the monthly cost impact of each issue."
     - *Production readiness audit:* "Audit my codebase for production readiness. Check for error monitoring, test coverage on payment and authentication paths, accessibility basics, and deployment configuration. Tell me what will fail silently in production."
-17. **Working With Your AI Tool**: practical stuff for the build:
+18. **Working With Your AI Tool**: practical stuff for the build:
     - Keep your project instruction file (CLAUDE.md or whatever your tool uses) under 100 lines. If it bloats, split the details into smaller files inside the folders they belong to.
     - Set up your logging early, before the bugs ever show up. Ask your AI once: *"Define a simple, consistent debug-logging plan for this app. Say what to log, the levels (from quiet INFO up to loud ERROR), and short category names for each feature. Write it to docs/DEBUG-LOGGING.md and follow it everywhere you write code."* Then point your project guide at that file so the AI reads it first and logs the same way every time. It feels pointless right now... it's the thing that saves you the first time something breaks and you have no idea why.
     - Turn off AI-tool plugins and integrations you aren't actively using. They quietly eat your AI's working memory.
     - Treat every prompt like a tiny spec. Not "add login." Instead: "Add login with Google and email. Show a spinner while it's checking. If it fails, show a friendly error with a retry button. If they're already logged in, drop them straight on the dashboard." Specific prompts, fewer nasty surprises.
     - Before you let the AI apply a fix, ask it: "How does this change what my user sees? Will it make the app slower? What does this look like to my user on their worst day?"
     - Manage *how* the AI works, not just what it writes. Set four ground rules (think and ask before coding, keep it simple, change only what you asked, work toward a clear finish line) that prevent the three things that wreck beginner projects: guessing, overbuilding, and "improving" code you never touched. When they get stuck in the messy middle (the AI says "fixed!" but it isn't, or they're going in circles), run the improvement loop: name a checkable finish line, snapshot first, make one small change, make the AI *show* the check (never just claim success), then keep it or undo it, and repeat. And hold every change to a definition of done: it works and didn't break anything, the build and linter are green, any test it wrote fails on the old code and passes on the new, it touched only what the task needed, and it matches the project's style. Working is the floor, not the bar. Walk them through **[references/MANAGING-YOUR-AI.md](references/MANAGING-YOUR-AI.md)** and put a short version in the project guide so the AI follows it every session.
-18. **Build Phases with Checkpoints**: (see below)
-19. **Open Questions**: whatever's still up in the air
+19. **Build Phases with Checkpoints**: (see below)
+20. **Open Questions**: whatever's still up in the air
 
 #### Build Phases with Checkpoints
 
@@ -557,6 +592,7 @@ Pull these in when the moment calls for it. Don't load them all up front.
 - **[references/HTML-BLUEPRINT.md](references/HTML-BLUEPRINT.md)**: How to generate the visual HTML blueprint (the planning deliverable) and the visual checkup report. One self-contained file, Tailwind plus Mermaid, opened in the browser.
 - **[references/MANAGING-YOUR-AI.md](references/MANAGING-YOUR-AI.md)**: How to manage the AI while it builds, in three parts: the four ground rules for how it should behave (think before coding, keep it simple, change only what was asked, aim at a finish line), the supervised improvement loop for the messy middle (finish line, snapshot, one small change, prove the check, keep or undo, repeat), and the build-phase Definition of Done it clears on every change (works without breaking anything, build/lint/format green, fail-first tests, scope contained, matches conventions). Karpathy and FrontierCode inspired, translated for beginners. Use during the build and bake a short version into the project guide.
 - **[references/DISCOVERY-DEEP-DIVE.md](references/DISCOVERY-DEEP-DIVE.md)**: The fuller discovery method behind Steps 3 to 5: the competitor gap matrix (the stand-in for ODI's satisfaction survey), the job-steps-to-needs mapping, ICP segmentation, the "significantly better or no opportunity" rule, and the honest rigor caveat. Pull in when you want the detail.
+- **[references/GROWTH-LOOPS.md](references/GROWTH-LOOPS.md)**: The fuller growth-loop playbook behind Phase 6.6: why a loop beats a funnel, the famous examples (Netflix, LinkedIn, Uber, Substack, Airbnb), the loop taxonomy (the big-engine types and the viral/content/paid boosters), how to find and sketch your loop, and the four accelerators. Pull in when the app clearly has a real loop worth designing with care. Borrowed from Brian Balfour / Reforge.
 - **[references/WHAT-A-SKILL-ACTUALLY-IS.md](references/WHAT-A-SKILL-ACTUALLY-IS.md)**: Read this when the thing they want to build is *itself* an AI skill, assistant, or agent. Beginners imagine an always-on robot that watches everything and self-improves. This sets the picture straight (a skill reads the current conversation, can't self-update, needs a memory store) and translates each wish into what's actually buildable, so the plan isn't built on a false premise.
 
 ## Tone

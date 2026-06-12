@@ -15,7 +15,8 @@ When someone who's never coded before says "I want to build an app that does X,"
 5. **Produces a complete plan document**: structured as the AI coding tool's onboarding manual, plus a **visual HTML blueprint** the human opens in their browser
 6. **Includes build checkpoints**: so the beginner is never lost during construction. The AI stops after each phase to explain what was just built, why, and what's next.
 7. **Teaches the build-time basics** in language for someone who has never touched code: local vs. GitHub vs. live, how to save and back up code (commit/push/deploy), and keeping secret keys safe.
-8. **Keeps the app healthy as it grows**: a **Checkup Mode** that gently looks over a messy, grown codebase and tidies it safely, so the AI keeps building cleanly instead of breaking things.
+8. **Finds a growth loop**: how the app recruits its next user on its own, preferably viral and organic, built into the core flow rather than bolted on, so growth compounds instead of needing a constant push.
+9. **Keeps the app healthy as it grows**: a **Checkup Mode** that gently looks over a messy, grown codebase and tidies it safely, so the AI keeps building cleanly instead of breaking things.
 
 ## Who it's for
 
@@ -57,13 +58,14 @@ By the end of a vibe-check session, you'll have a plan document that includes:
 - **Data model**: what gets stored, in plain language
 - **Cost breakdown**: monthly estimates with free tier details
 - **Pre-launch checklists**: security, legal, accessibility
+- **Growth loop**: the one way the app brings in its next user on its own, plus the number that proves it's working
 - **Build phases with checkpoints**: numbered phases with guided explanations at every step
 
 This plan is designed to be handed directly to your AI coding tool to start building.
 
 ## Version
 
-Current version: **1.6.0** (see [VERSION](VERSION) and [CHANGELOG.md](CHANGELOG.md)).
+Current version: **1.7.0** (see [VERSION](VERSION) and [CHANGELOG.md](CHANGELOG.md)).
 
 When you use vibe-check, it does a quick best-effort check for a newer version and tells you if you're behind. To update, run `git pull` inside `.claude/skills/vibe-check`. Versioning is semantic (MAJOR.MINOR.PATCH).
 
@@ -85,6 +87,7 @@ Built by Amer Arab. I spent 12-plus years as a product manager, most of it takin
 - [FrontierCode](https://cognition.ai/) by Cognition: quality over mere correctness, the fail-first test idea and the "working is the floor, not the bar" definition of done
 - [design-shotgun](https://github.com/garrytan/gstack) by Garry Tan / gstack: the side-by-side comparison board, adapted here as plain static HTML
 - [Continuous Discovery Habits](https://www.producttalk.org/) by Teresa Torres (opportunity solution trees): evidence-tagging opportunities, the framing-issues honesty pass, and the riskiest-assumption test
+- [Growth Loops](https://www.reforge.com/blog/growth-loops) by Brian Balfour / Reforge (with Casey Winters and Kevin Kwok): the funnel-to-loop reframe and the loop taxonomy, translated here into three buildable shapes a beginner can act on (Phase 6.6)
 - [The Last Mile Playbook](https://github.com/TexasBedouin) by Amer Arab: the PM vs Engineer mindset, payment processor gotchas, and the hard-won lessons of shipping a real product as a non-developer
 
 ## License
